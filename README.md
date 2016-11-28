@@ -1,4 +1,4 @@
-kickstarter
+Geek To Freak
 ===========
 
-Landing pages we created to help our kickstarter succeed 
+Landing pages I edited for the G2F side project.
