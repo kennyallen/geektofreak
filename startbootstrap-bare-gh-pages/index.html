@@ -18,8 +18,44 @@
     <style>
     body {
         padding-top: 70px;
+        background: url("");
+        background-color: #4286f4;
+        opacity: 1;
+        color: #ffffff;
         /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     }
+    
+    #background {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+    #main {
+       background: none; 
+       opacity: 1;
+    }
+    #form-control__input {
+    border-width: 0px;
+    border-radius: 0px;
+    font-size: 14px;
+    height: 50px;
+    width: 100%;
+}
+#site-user-signup__submit {
+    border-width: 0px;
+    border-radius: 0px;
+    font-size: 14px;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 50px;
+    background-color: #00a651;
+    color: #FFFFFF;
+    border-color: ;
+}
     </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -66,22 +102,44 @@
     </nav>
 
     <!-- Page Content -->
+    <img id="background" src="http://www.borntoworkout.com/wp-content/uploads/2016/01/Jay-Cutler-Body.jpg" style="width: 1280px; height: auto;">
+
     <div class="container">
-
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1>A Bootstrap Starter Template</h1>
-                <p class="lead">Complete with pre-defined file paths that you won't have to change!!</p>
-                <ul class="list-unstyled">
-                    <li>Bootstrap v3.3.7</li>
-                    <li>jQuery v1.11.1</li>
-                </ul>
+        <div class="jumbotron" id="main">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <h1>GAIN 20 LBS. OF MUSCLE IN 30 DAYS </h1>
+                    <h3>Transform your body. Add 20 lbs. of muscle in in just one month. We'll show you how to hack your biology with this free email course.</h3>
+                    
+                </div>
             </div>
+            <!-- /.row -->
         </div>
-        <!-- /.row -->
-
     </div>
     <!-- /.container -->
+    
+    <!-- Begin MailChimp Signup Form -->
+<div class="container col-md-12 col-md-offset-2">
+    <div class="row">
+        <div>
+        <form action="//launchrock.us14.list-manage.com/subscribe/post?u=8feba7a5bb246aa2b360526ce&amp;id=d390647ac7" 
+            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" 
+            class="form-inline" target="_blank" novalidate>
+                
+            <div class="form-group col-md-6">
+                <label class="sr-only">Email address</label>
+                <input type="email" class="form-control form-control-lg" placeholder="Enter email" id="form-control__input">
+            </div>
+            
+        	<div class="col-md-2">  
+            <button type="submit" value="Subscribe" name="subscribe" id="site-user-signup__submit" class="btn btn-primary form-control form-control-lg">Join Free Course</button>
+            </div>
+            
+            </form>
+        </div>
+    </div>
+</div>
+<!--End mc_embed_signup-->
 
     <!-- jQuery Version 1.11.1 -->
     <script src="js/jquery.js"></script>
